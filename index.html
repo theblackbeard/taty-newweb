@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tatiana de S. Santana</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Passion+One|Satisfy" rel="stylesheet">
+<body>
+    <header class="mt-top">
+        <div class="mt-top-img-box">
+            <h1>Tatiana S. Souza</h1>
+            <h2>Designer de Interiores</h2>
+        </div>
+    </header>
+    <nav>
+        <div class="mt-menu-bar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contato</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="mt-body">
+        <div class="mt-body-header">
+            <h1>Ultimos Trabalhos</h1>
+        </div>
+
+
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="grid-item">
+                <img src="img/one.jpg" />
+            </div>
+            <div class="grid-item">
+                <img src="img/three.jpg" />
+            </div>
+            <div class="grid-item">
+                <img src="img/two.jpg" />
+            </div>
+            <div class="grid-item">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+            </div>
+            <div class="grid-item">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+            </div>
+            <div class="grid-item">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+            </div>
+            <div class="grid-item">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+            </div>
+            <div class="grid-item">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+            </div>
+            <div class="grid-item">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        Footer
+    </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script>
+        var $grid = $('.grid').imagesLoaded( function() {
+            $grid.masonry({
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                columnWidth: '.grid-sizer'
+            });
+        });
+    </script>
+</body>
+</html>
