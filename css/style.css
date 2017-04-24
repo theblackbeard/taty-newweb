@@ -1,20 +1,23 @@
 
 .mt-top{
-    height: 300px;
+    height: 250px;
+     border:0px solid black;
+   
   }
 .mt-menu-bar { display: table; margin:0 auto}
 .mt-top-img-box {
-                    width: 500px;
-                    height:260px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-top: 0px;
-                }
+    width: 380px;
+    height:260px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding-top:40px;	
+    border:0px solid black;
+}
 .mt-top-img-box h1 {
     font-size: 70px;
     margin: 0;
-    padding-top: 90px;
-    font-family: 'EB Garamond', serif;
+    padding-top: 50px;
     text-align: center;
     color: #3f4f5e;
 }
@@ -26,7 +29,7 @@
     text-align: right;
     font-style: italic;
     color: #ef5c6e;
-    font-family: 'Satisfy', cursive;
+   
 }
 
 
@@ -35,34 +38,70 @@ nav{
     background-color:#fff ;
     border-top: 0px solid #3f4f5e;
     border-bottom: 0px solid #3f4f5e;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: 0 0 0 0;
+    height: 25px;
+    line-height: 22px;
+    
 
+}
+
+
+nav li{
+    
+     border-left: solid 2px #3f4f5e;;
+     height: 20px;
+     
+
+}
+
+nav li:first-child{
+    border-left: none;
 }
 
 nav ul li a{
-    color:#ef5c6e;
-    font-family: 'Passion One', cursive;
+    color: #3f4f5e;
     text-transform: uppercase;
-    font-size: 19px;
+    font-size: 16px;
+    height: 20px;
+    border: 0px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
+
+nav ul li a:hover{
+    color: #000;
+    background: #fff;
+}
+
 
 /*content*/
+
+
 .container{
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 100px;
+    border: 0px solid black;
+    width: 80%;
 
 }
 
-.mt-body{ margin-top: 0px; background-color: #fff }
+.mt-body{ margin-top: 0px; background-color: #fff;  }
+
 .mt-body-header {
-    margin: 0px 0 50px 30px;
-    padding-top: 90px;
-    border-bottom: 6px solid #3f4f5e;
+    margin: 0px 100px 50px 100px;
+    padding-top: 30px;
+    padding-bottom: 0;
+    border-bottom: 4px solid #ef5c6e;
+    
 }
 .mt-body-header h1{
-    font-size: 40px;
+    font-size: 35px;
     margin: 0;
     padding: 0;
-    font-family: 'Passion One', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
     color: #3f4f5e;
 }
 .grid {
@@ -73,7 +112,9 @@ nav ul li a{
 .grid:after {
     content: '';
     display: block;
+    
     clear: both;
+
 }
 
 /* ---- .grid-item ---- */
@@ -81,6 +122,8 @@ nav ul li a{
 .grid-sizer,
 .grid-item {
     width: 33.333%;
+    padding: 5px;
+   
 }
 
 .grid-item {
@@ -90,6 +133,11 @@ nav ul li a{
 .grid-item img {
     display: block;
     width: 100%;
+    
+}
+
+.grid-item img:hover{
+    border: 5px solid rgba(239,92,110,0.8)
 }
 
 
